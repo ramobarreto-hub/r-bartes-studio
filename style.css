@@ -19,7 +19,6 @@ body {
 
 #container-Pai {
   width: 87vw;
-  height: 80vh;
   border-radius: 08px;
   border: 8px solid #e9e8e86c;
   display: flex;
@@ -63,6 +62,7 @@ body {
   height: 8vw;
   border: 1px solid;
   color: black;
+  padding-left: 5px;
 }
 
 #conteudo {
