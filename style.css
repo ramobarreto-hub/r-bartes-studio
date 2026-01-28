@@ -9,7 +9,8 @@ body {
   background-image: url(./assets/Fundo-home-page.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 40px;
+  background-position: center;
+  padding: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -25,11 +26,12 @@ body {
   flex-direction: column;
   padding: 50px;
   justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.3);
+  gap: 12px;
 }
 
 .button-Login {
   font-size: 30px;
-  width: 10vw;
   height: 5vh;
   border-radius: 20px;
   background-color: #cea690a8;
@@ -48,30 +50,31 @@ body {
 
 #Nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: space-between;
-  background-color: aquamarine;
+  align-items: center;
+  gap: 10px;
 }
 
 #Procurar {
   border-radius: 20px;
   background-color: #cea690a8;
-  width: 20vw;
-  height: 2, 5vw;
+  width: 50vw;
+  height: 8vw;
+  border: 1px solid;
+  color: black;
 }
 
 #conteudo {
-  background-color: antiquewhite;
-  font-size: 80px;
+  font-size: 24px;
 }
 
 #descricao {
   flex: 3;
-  background-color: coral;
-  font-size: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 #noticias {
@@ -81,12 +84,110 @@ body {
   padding: 15px;
   background: rgba(255, 255, 255, 0.7);
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
 }
 
 #main {
   display: flex;
-  flex-direction: row;
   height: 50%;
+  flex-wrap: wrap;
+}
+
+#background-style {
+  background-color: rgba(255, 255, 255, 0.473);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: (2px);
+}
+
+footer {
+
+  font-size: 15px;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url(./assets/Fundo-home-page.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #container-Pai {
+    width: 87vw;
+    height: 80vh;
+    border-radius: 08px;
+    border: 8px solid #e9e8e86c;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-between;
+  }
+
+  .button-Login {
+    font-size: 17px;
+    width: 08vw;
+    height: 4vh;
+    border-radius: 20px;
+    background-color: #cea690a8;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+  }
+
+  #title {
+    visibility: hidden;
+  }
+
+  #Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #Procurar {
+    border-radius: 20px;
+    background-color: #cea690a8;
+    width: 30vw;
+    height: 2vw;
+    text-align: center;
+  }
+
+  #conteudo {
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #descricao {
+    flex: 3;
+    font-size: 25px;
+  }
+
+  #noticias {
+    flex: 2;
+    width: 260px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  #main {
+    display: flex;
+    flex-direction: row;
+  }
 }
