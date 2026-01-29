@@ -1,0 +1,162 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+
+body {
+    background: linear-gradient(175deg, rgb(82 84 90) 10%, rgb(207 168 148) 50%, rgb(204 150 108) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#container {
+
+    width: 80vw;
+    height: 70vh;
+    border-radius: 08px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+#left-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+#rigth-container {
+    flex: 1;
+    background-image: url(../../assets/Login\ \(3\).png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    display: none;
+}
+
+#checkbox-senha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#Titulo-da-pagina {
+    font-size: 20px;
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#Subtitle-page {
+    margin-bottom: 4rem;
+}
+
+#Bem-vindo-texto {
+    margin-bottom: 1rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-text {
+    margin-top: 0, 5rem;
+    margin-bottom: 1rem;
+    height: 2rem;
+    border-radius: 8px;
+    border: solid 1px #ccc;
+    padding-left: 8px;
+}
+
+#checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    gap: 8px;
+}
+
+main {
+    min-width: 40%;
+}
+
+#Esqueceu-a-senha {
+    color: #85790ebe;
+    text-decoration: none;
+}
+
+#Lembrar-senha {
+    color: #85790ebe;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#button {
+    margin-top: 4rem;
+    width: 96px;
+    height: 48px;
+    border-radius: 8px;
+    border: rgb(204 150 108);
+    background-color: rgb(204 150 108);
+}
+
+#Cadastrar {
+    color: #85790ebe;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#link-cadastrar {
+    color: #0269a5e8;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (min-width: 600px) {
+    #rigth-container {
+        flex: 1;
+        display: block;
+        background-image: url(../../assets/Fundo-home-page.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+
+    #Subtitle-page {
+        margin-bottom: 4rem;
+    }
+
+    #container {
+
+        width: 40vw;
+        height: 60vh;
+        border-radius: 08px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+    }
+}
