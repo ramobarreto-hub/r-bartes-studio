@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(175deg, rgb(82 84 90) 10%, rgb(207 168 148) 50%, rgb(204 150 108) 100%);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+/* HEADER FIXO */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    z-index: 1000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-size: 0.8rem;
+
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+
+}
+
+
+/* MAIN */
+.container {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
+}
+
+/* CARD */
+
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin: 15px;
+}
+
+.card p {
+    font-size: 0.8rem;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    color: #000;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 8px;
+}
+
+#Menu-drop {
+    display: none;
+
+}
+
+#Procurar {
+    display: none;
+
+}
+
+.button {
+    font-size: 15px;
+    height: 5vh;
+    border-radius: 15px;
+    background-color: #cea690a8;
+    padding: 05px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+}  .Card-footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 8px;
+        
+    }
+
+/* RESPONSIVO PARA COMPUTADOR */
+@media (min-width: 600px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        background-color: #111;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 04px;
+        z-index: 1000;
+        text-decoration: none;
+        font-size: 25px;
+        gap: 15px;
+    }
+
+    #Menu-drop {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+
+    }
+
+    .lista {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #button {
+        display: none;
+    }
+
+    #Dropdow {
+        display: flex;
+        font-size: 25px;
+        gap: 15px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .button {
+        font-size: 15px;
+        height: 5vh;
+        border-radius: 15px;
+        background-color: #cea690a8;
+        padding: 05px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .Card-footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .discriçao-cards {
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      #Procurar { display: block;
+    width: 350px;
+    border-radius: 8px;
+    height: 30px;
+    text-align: center;
+}
+}
