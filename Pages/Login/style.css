@@ -114,7 +114,8 @@ main {
 }
 
 #button {
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 96px;
     height: 48px;
     border-radius: 8px;

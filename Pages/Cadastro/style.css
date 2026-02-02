@@ -81,16 +81,16 @@
     color: #2575fc;
     text-decoration: none;
   }
-  
+  #genero{
+    Display: flex;
+flex-direction: row;
+}
 
   @media (min-width: 600px) {
     .container {
       max-width: 460px;
     }
 
-    #genero{
-        Display: flex;
-    flex-direction: row;
-    }
+    
   }
   
