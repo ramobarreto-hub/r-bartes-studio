@@ -1,0 +1,211 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(175deg, rgb(82 84 90) 10%, rgb(207 168 148) 50%, rgb(204 150 108) 100%);
+    color: #333;
+}
+
+/* HEADER (mobile) */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #111;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 0.9rem;
+}
+
+#dropdow {
+    display: none;
+}
+
+/* MAIN (mobile) */
+.container {
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* PRODUTO (mobile) */
+.product {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGEM (mobile) */
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* INFO (mobile) */
+.product-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.details {
+    list-style: none;
+    margin-bottom: 15px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.details li {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+}
+
+/* PREÇO */
+.price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* BOTÃO */
+.buy-button {
+    font-size: 15px;
+    height: 5vh;
+    border-radius: 15px;
+    background-color: #cea690a8;
+    padding: 05px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+/* CONTEÚDO DO CURSO (mobile) */
+.course-content {
+    margin-top: 30px;
+}
+
+.course-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.modules {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.module {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.module h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.module p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* FOOTER (mobile) */
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+}
+
+
+@media (min-width: 600px) {
+    .container {
+        padding-top: 110px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .product {
+        flex-direction: row;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 12px;
+        display: flex;
+        gap: 30px;
+        padding: 30px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .product-image img {
+        max-width: 500px;
+        flex: 1;
+    }
+
+    .product-info {
+        font-size: 1.8rem;
+        flex: 1;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.6rem;
+
+    }
+
+    #button {
+        display: none;
+    }
+
+    #dropdow {
+        display: block;
+    }
+}

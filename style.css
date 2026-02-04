@@ -19,6 +19,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 25px;
 }
 
 #container-Pai {
@@ -115,6 +116,7 @@ body {
 footer {
 
   font-size: 15px;
+  text-align: center;
 }
 
 @media (min-width: 600px) {

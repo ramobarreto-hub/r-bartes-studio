@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechar Pedido | R.Artes Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>R.Artes Studio</h1>
+    </header>
+
+    <main class="container">
+
+        <!-- DADOS DO USUÁRIO -->
+        <section class="box">
+            <h2>Dados do Usuário</h2>
+
+            <form class="form">
+                <label>
+                    Nome completo
+                    <input type="text" placeholder="Digite seu nome">
+                </label>
+
+                <label>
+                    E-mail
+                    <input type="email" placeholder="Digite seu e-mail">
+                </label>
+
+                <label>
+                    Telefone
+                    <input type="tel" placeholder="(00) 00000-0000">
+                </label>
+
+                <select class="form-select">
+                    <option selected>Selecione o meio de Pagamento</option>
+                    <option value="1">Credito</option>
+                    <option value="2">Debito</option>
+                    <option value="3">Pix</option>
+                </select>
+            </form>
+        </section>
+
+        <!-- DADOS DO PRODUTO -->
+        <section class="box">
+            <h2>Resumo do Pedido</h2>
+
+            <div class="product">
+                <img src="https://picsum.photos/400/300?art" alt="Curso Ilustração Digital">
+
+                <div class="product-info">
+                    <h3>Curso de Ilustração Digital</h3>
+                    <p>Duração: 40 horas</p>
+                    <span class="price">R$ 199,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINALIZAR -->
+        <section class="checkout">
+            <button class="btn">
+                Finalizar Compra
+            </button>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 - R.Artes Studio</p>
+    </footer>
+
+</body>
+
+</html>
