@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Chewy", system-ui;
-    font-weight: 400;
+    font-family: "Pathway Gothic One", sans-serif;
     font-style: normal;
 }
 
@@ -121,15 +120,16 @@ body {
 
 .button {
     font-size: 15px;
-    height: 5vh;
+    height: 4vh;
     border-radius: 15px;
     background-color: #cea690a8;
-    padding: 05px;
+    padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: black;
+    font-weight: bold;
 
 }
 
@@ -191,15 +191,16 @@ body {
 
     .button {
         font-size: 15px;
-        height: 5vh;
+        height: 4vh;
         border-radius: 15px;
         background-color: #cea690a8;
-        padding: 05px;
+        padding: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
         color: black;
+        font-weight: bold;  
     }
 
     .Card-footer {

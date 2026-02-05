@@ -3,12 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    font-family: "Chewy", system-ui;
-    font-weight: 400;
+    font-family: "Pathway Gothic One", sans-serif;
     font-style: normal;
 }
-
 
 body {
     background: linear-gradient(175deg, rgb(82 84 90) 10%, rgb(207 168 148) 50%, rgb(204 150 108) 100%);
@@ -17,12 +14,13 @@ body {
     align-items: center;
     height: 100vh;
 
+
 }
 
 
 #container {
 
-    min-width: 90vw;
+    min-width: 70vw;
     min-height: 80vh;
     border-radius: 08px;
     background-color: white;
@@ -150,6 +148,7 @@ main {
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 15px;
+
     }
 
     #Subtitle-page {

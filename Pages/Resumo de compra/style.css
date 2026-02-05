@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-style: normal;
 }
 
 body {
-    background-color: #f4f4f4;
+    background: linear-gradient(175deg, rgb(82 84 90) 10%, rgb(207 168 148) 50%, rgb(204 150 108) 100%);
     color: #333;
 }
 
@@ -17,6 +18,21 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1.6rem;
+}
+
+#dropdow {
+    display: none;
 }
 
 /* CONTAINER */
@@ -64,6 +80,7 @@ body {
     padding: 12px;
     border-radius: 6px;
     border: 1px solid #ccc;
+    color: #777777;
 
 }
 
@@ -101,17 +118,18 @@ body {
     background-color: #000;
     color: #fff;
     border: none;
-    border-radius: 8px;
-    font-size: 1rem;
+    border-radius: 15px;
+    font-size: 15px;
     cursor: pointer;
 }
 
 /* FOOTER */
 .footer {
+    background-color: #111;
     text-align: center;
     padding: 20px;
     font-size: 0.8rem;
-    color: #666;
+    color: #fcfcfc;
 }
 
 /* ===================== */
@@ -142,5 +160,13 @@ body {
     .btn {
         width: auto;
         padding: 15px 40px;
+    }
+
+    #button {
+        display: none;
+    }
+
+    #dropdow {
+        display: block;
     }
 }
