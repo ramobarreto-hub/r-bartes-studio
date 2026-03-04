@@ -50,6 +50,12 @@ body {
   font-size: 1rem;
 }
 
+.erro-msg{
+  color: red;
+  font-weight: 500;
+  padding: 4px;
+  display: none;
+}
 .form-group input:focus {
   outline: none;
   border-color: #2575fc;
