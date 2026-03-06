@@ -12,6 +12,8 @@ function login(eventrec){
     const valorLogin = inputLogin.value;
     const valorSenha = inputSenha.value;
 
+    const basededados = JSON.parse(localStorage.getItem(dados))
+
     const LOGIN_VALIDO = "admin@admin.com";
     const SENHA_VALIDO = "1234";
 

@@ -53,7 +53,7 @@ function cadastrar(eventrec) {
     const inputNome = document.getElementById("nome").value;
     const inputDatadenascimento = document.getElementById("datadenascimento").value;
     const inputCpf = document.getElementById("cpf").value;
-    const inputGenero = document.getElementById("genero").value;
+    // const inputGenero = document.getElementById("genero").value;
     const inputTelefone = document.getElementById("Telefone").value;
     const inputEmail = document.getElementById("email").value;
     const inputSenha = document.getElementById("senha").value;
@@ -62,44 +62,50 @@ function cadastrar(eventrec) {
     const msgErronome = document.getElementById("intput-erro");
     const msgErrodata = document.getElementById("intput-errodate");
     const msgErrocpf = document.getElementById("intput-errocpf");
-    const msgErrogenero = document.getElementById("intput-errogenero");
+    // const msgErrogenero = document.getElementById("intput-errogenero");
     const msgErrotelefone = document.getElementById("intput-erroTelefone");
     const msgErroEmail = document.getElementById("intput-erroemail");
     const msgErrosenha = document.getElementById("intput-errosenha");
     const msgErroconfirsenha = document.getElementById("intput-erroconfirmar");
 
-
+    let erro = false
 
     if (!inputNome || inputNome.length < 3) {
+        erro = true
         msgErronome.style.display = 'block'
     } else {
         msgErronome.style.display = 'none'
     }
 
     if (!inputDatadenascimento) {
+        erro = true
         msgErrodata.style.display = 'block'
 
     } else {
+        erro = true
         msgErrodata.style.display = 'none'
     }
 
     if (!validaCPF(inputCpf)) {
+        erro = true
         msgErrocpf.style.display = 'block'
     } else {
         msgErrocpf.style.display = 'none'
     }
 
-    if (!inputGenero) {
-        alert("preencher campo")
-    }
+    // if (!inputGenero) {
+    //     alert("preencher campo")
+    // }
 
     if (!inputTelefone || inputTelefone.length < 10) {
+        erro = true
         msgErrotelefone.style.display = 'block'
     } else {
         msgErrotelefone.style.display = 'none'
     }
 
     if (!inputEmail || inputEmail.length < 6) {
+        erro = true
         msgErroEmail.style.display = 'block'
     } else {
         msgErroEmail.style.display = 'none'
@@ -119,5 +125,32 @@ function cadastrar(eventrec) {
         msgErroconfirsenha.style.display = 'block'
     } else {
         msgErroconfirsenha.style.display = 'none'
+    }
+
+    if (true) {
+        const dadosusuario = {
+            nome: inputNome,
+            datadenascimento: inputDatadenascimento,
+            CPF: inputCpf,
+            // genero:inputGenero,
+            telefone: inputTelefone,
+            email: inputEmail,
+            senha: inputSenha,
+            cofirmarsenha: inputConfirmarsenha
+        }
+
+        let listacadastrados = []
+
+
+        let dadosantigos = JSON.parse(localStorage.getItem('BDdadosusario'))
+
+        if (dadosantigos) {
+            listacadastrados = dadosantigos
+        }
+        listacadastrados.push(dadosusuario);
+
+        localStorage.setItem('BDdadosusario', JSON.stringify(listacadastrados));
+
+        window.location.href = "../Listagem/index.html"
     }
 }
