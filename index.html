@@ -6,55 +6,96 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Pathway+Gothic+One&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/Logo.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R.bartes Studio</title>
+    <title>Ilustração Digital | R.Bartes Studio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="background-style"></div>
-    <header id="title">
-        <h1> R.bartes Studio</h1>
-    </header>
-    <div id="container-Pai">
 
-        <Nav id="Nav">
-            <input id="Procurar" type="search" placeholder=" Buscar noticias, curso e muito mais">
-            <a class="button-Login" href=".//Pages/Listagem/index.html"> Cursos</a>
-            <a class="button-Login" target="_blank" href="./Pages/Cadastro/index.html"> Cadastre-se</a>
-            <a class="button-Login" target="_blank" href="./Pages/Login/index-1.html"> Login</a>
-        </Nav>
-        <div>
-            <h2 id="conteudo">Bem-vindo ao <br>
-                R.bartes Studio</h2>
-        </div>
-        <main id="main">
-            <div id="descricao">
-                <p>
-                    <b>Aqui você encontra um espaço pensado especialmente para você.</b> <br><br>
-                    Cursos, arte e inspiração em um só lugar. <br>
-                    Explore conteúdos exclusivos, eventos, notícias e muito mais.
-                </p>
+    <header class="header">
+        <h1>R.bartes Studio</h1>
+        <nav>
+            <button id="button"><img src="./../../assets/Menu suspeso.jpg" alt=""></button>
+            <div id="dropdow">
+                <a href="../Listagem/index.html">Cursos</a>
+                <a href="#">Contato</a>
+                <a href="../../index.html">Inicio</a>
             </div>
-            <aside Id="noticias">
-                <h2>Últimas Notícias</h2>
-                <div id="noticiastexto">
-                    <p>
-                        Comparação entre ilustração digital e desenho manual
-                    </p>
-                    <img id="img" src="./assets/image-115.png" alt="Ilustracaoxdesenho">
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="product">
+
+            <div class="product-image">
+                <img src="../../assets/imagen-cursos/ilustracao.png" alt="">
+            </div>
+
+            <div class="product-info">
+                <h2>Curso de Ilustração Digital</h2>
+
+                <p class="description">
+                    Aprenda a criar ilustrações digitais do zero até técnicas avançadas.
+                    Ideal para iniciantes e artistas que desejam evoluir no digital,
+                    utilizando softwares modernos e conceitos profissionais.
+                </p>
+
+                <ul class="details">
+                    <li><strong>Duração:</strong> 40 horas</li>
+                    <li><strong>Nível:</strong> Iniciante ao Avançado</li>
+                    <li><strong>Modalidade:</strong> Online</li>
+                </ul>
+                <section class="course-content">
+
+                    <h3>Conteúdo do Curso</h3>
+
+                    <div class="modules">
+                        <div class="module">
+                            <h4>Módulo 1 — Fundamentos</h4>
+                            <p>Ferramentas, pincéis, traço e base da ilustração digital.</p>
+                        </div>
+
+                        <div class="module">
+                            <h4>Módulo 2 — Desenho e Estrutura</h4>
+                            <p>Formas, proporção, anatomia básica e movimento.</p>
+                        </div>
+
+                        <div class="module">
+                            <h4>Módulo 3 — Luz e Cor</h4>
+                            <p>Teoria das cores, sombra, textura e pintura digital.</p>
+                        </div>
+
+                        <div class="module">
+                            <h4>Módulo 4 — Estilo e Composição</h4>
+                            <p>Personagens, cenários e desenvolvimento artístico.</p>
+                        </div>
+
+                        <div class="module">
+                            <h4>Módulo 5 — Finalização e Mercado</h4>
+                            <p>Portfólio, finalização e mercado criativo.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="price">
+                    R$ 199,00
                 </div>
-            </aside>
 
-        </main>
+                <a class="buy-button" href="../Resumo de compra/index.html">Comprar curso</a>
+            </div>
 
-    </div>
-    <footer>
-        © 2026 - R.bartes Studio. Todos os direitos reservados.
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>📧 contato@rartesstudio.com</p>
+        <p>📞 (11) 99999-9999</p>
+        <p>© 2026 - R.Artes Studio. Todos os direitos reservados.</p>
     </footer>
-    </div>
+
 </body>
 
 </html>

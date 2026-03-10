@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-image: url(./assets/Fundo-home-page.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+  min-height: 100vh;
+}
+
+
+#container-Pai {
+  width: 87vw;
+  border-radius: 08px;
+  border: 8px solid #e9e8e86c;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.3);
+  gap: 12px;
+  align-items: center;
+}
+
+.button-Login {
+  font-size: 30px;
+  height: 5vh;
+  border-radius: 20px;
+  background-color: #cea690a8;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+
+}
+
+#title {
+  visibility: hidden;
+}
+
+#Nav {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+#Procurar {
+  border-radius: 20px;
+  background-color: #cea690a8;
+  width: 50vw;
+  height: 8vw;
+  border: 1px solid;
+  color: black;
+  padding-left: 5px;
+}
+
+#conteudo {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#descricao {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-style: "Pathway Gothic One", sans-serif;
+}
+
+#noticias {
+  flex: 1;
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+#main {
+  display: flex;
+  height: 50%;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex-direction: column;
+}
+
+#background-style {
+  background-color: rgba(255, 255, 255, 0.473);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: (2px);
+}
+
+#img {
+  height: 130px;
+}
+
+#noticiastexto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 12px;
+}
+
+footer {
+
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url(./assets/Fundo-home-page.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #container-Pai {
+    width: 87vw;
+    height: 83vh;
+    border-radius: 08px;
+    border: 8px solid #e9e8e86c;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-between;
+  }
+
+  .button-Login {
+    font-size: 17px;
+    width: 08vw;
+    height: 4vh;
+    border-radius: 20px;
+    background-color: #cea690a8;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+  }
+
+  #title {
+    visibility: hidden;
+  }
+
+  #Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+
+  #Procurar {
+    border-radius: 20px;
+    background-color: #cea690a8;
+    width: 30vw;
+    height: 2vw;
+    text-align: center;
+  }
+
+  #conteudo {
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #descricao {
+    flex: 3;
+    font-size: 25px;
+  }
+
+  #noticias {
+    flex: 2;
+    width: 260px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  #img {
+    height: 250px;
+  }
+
+  #noticiastexto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: row;
+  }
+}
