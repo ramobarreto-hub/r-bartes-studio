@@ -9,15 +9,21 @@ const msgErroLogin = document.getElementById("intput-errosenha");
 
 function login(eventrec){
     event.preventDefault(eventrec);
-    const valorLogin = inputLogin.value;
-    const valorSenha = inputSenha.value;
 
-    const basededados = JSON.parse(localStorage.getItem(dados))
+let usuarioDigitado = inputLogin.value
+let senhaDigitada = inputSenha.value
 
-    const LOGIN_VALIDO = "admin@admin.com";
-    const SENHA_VALIDO = "1234";
+    const basededados = JSON.parse(localStorage.getItem("BDdadosusario"))
 
-    if (valorLogin == LOGIN_VALIDO && valorSenha == SENHA_VALIDO) {
+    // const LOGIN_VALIDO = "admin@admin.com";
+    // const SENHA_VALIDO = "1234";
+console.log(basededados);
+
+    const usuarioValido = basededados.find((user) => {
+        return user.email === usuarioDigitado && user.senha === senhaDigitada;
+    });
+
+    if (usuarioValido) {
         rememberSave();
       window.location.href="../Listagem/index.html"
      

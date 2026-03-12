@@ -47,6 +47,27 @@ function validaCPF(cpf) {
 
     return true
 }
+let valorCheckboxes = ''
+const checkboxes = document.querySelectorAll("input[type=radio]");
+console.log(checkboxes);
+
+checkboxes.forEach((item) => {
+    item.addEventListener('click', function (event) {
+
+        const valorSelecionado = event.target.value;
+
+        checkboxes.forEach(item => {
+            console.log('loop')
+            if (item.value === valorSelecionado) {
+                valorCheckboxes = item.value
+                item.checked = true;
+            }
+            else {
+                item.checked = false;
+            }
+        });
+    });
+});
 
 function cadastrar(eventrec) {
     event.preventDefault(eventrec);
@@ -67,6 +88,7 @@ function cadastrar(eventrec) {
     const msgErroEmail = document.getElementById("intput-erroemail");
     const msgErrosenha = document.getElementById("intput-errosenha");
     const msgErroconfirsenha = document.getElementById("intput-erroconfirmar");
+
 
     let erro = false
 
@@ -132,7 +154,7 @@ function cadastrar(eventrec) {
             nome: inputNome,
             datadenascimento: inputDatadenascimento,
             CPF: inputCpf,
-            // genero:inputGenero,
+            genero:valorCheckboxes,
             telefone: inputTelefone,
             email: inputEmail,
             senha: inputSenha,

@@ -29,14 +29,15 @@
                 </div>
 
 
-                <form>
+                <form onsubmit="login(event)">
                     <div class="input-container">
                         <label> E-mail:</label>
-                        <input class="input-text" tapey="email" placeholder=" Digite seu E-mail!">
+                        <input class="input-text" tapey="email" placeholder=" Digite seu E-mail!" required id="input-login">
                     </div>
                     <div class="input-container">
                         <label> Senha:</label>
-                        <input class="input-text" type="password" placeholder="Digite sua senha! ">
+                        <input class="input-text" type="password" placeholder="Digite sua senha! "id="input-senha">
+                        <span id = "intput-errosenha" class="erro-msg">E-mail ou senha invalido!</span>
                     </div>
                     <div id="checkbox-senha">
 
@@ -59,5 +60,5 @@
         <div id="rigth-container"></div>
     </div>
 </body>
-
+<script src="./script.js"></script>
 </html>
